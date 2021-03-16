@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Print(metrics.NodeMetrics)
+	fmt.Print(metrics.PodMetrics)
 }

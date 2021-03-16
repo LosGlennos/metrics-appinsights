@@ -16,3 +16,4 @@ spec:
       containers:
       - name: metrics-appinsights
         image: martinfylke/metrics-appinsights:latest
+        
