@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: metrics-appinsights
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: metrics-appinsights
+  template:
+    metadata:
+      namespace: kube-system
+      labels:
+        app: metrics-appinsights
+    spec:
+      containers:
+      - name: metrics-appinsights
+        image: martinfylke/metrics-appinsights:latest
