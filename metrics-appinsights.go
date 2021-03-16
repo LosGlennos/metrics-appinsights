@@ -8,5 +8,5 @@ import (
 )
 
 func main() {
-	fmt.Println(json.Marshal(metrics.PodMetricsList))
+	fmt.Println(json.Marshal(metrics.PodMetricsList.Items))
 }
