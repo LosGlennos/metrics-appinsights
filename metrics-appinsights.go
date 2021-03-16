@@ -1,11 +1,12 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 
 	"k8s.io/metrics/pkg/apis/metrics"
 )
 
 func main() {
-	fmt.Print(metrics.PodMetrics)
+	fmt.Println(json.Marshal(metrics.PodMetricsList))
 }
